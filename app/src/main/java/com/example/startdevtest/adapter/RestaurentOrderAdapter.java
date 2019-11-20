@@ -48,10 +48,10 @@ public class RestaurentOrderAdapter extends RecyclerView.Adapter<RestaurentOrder
     }
 
     public class RestaurentViewHolder extends RecyclerView.ViewHolder {
-        public TextView RestaurantName;
-        public TextView RestaurantPrice;
+        private TextView RestaurantName;
+        private TextView RestaurantPrice;
 
-        public RestaurentViewHolder(View itemView) {
+        private RestaurentViewHolder(View itemView) {
             super(itemView);
             RestaurantName = itemView.findViewById(R.id.cart_food_title);
             RestaurantPrice = itemView.findViewById(R.id.cart_food_price);
