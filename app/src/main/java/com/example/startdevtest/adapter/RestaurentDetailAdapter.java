@@ -22,8 +22,6 @@ import java.util.List;
 public class RestaurentDetailAdapter extends RecyclerView.Adapter<RestaurentDetailAdapter.RestaurentDetailViewHolder> {
     private Context mContext;
     private List<ProductItem> mExampleList;
-    private RecyclerView mRecyclerView;
-    private RestaurentAdapter mExampleAdapter;
     private RestaurentDetailAdapter.onItemClickListener mListener;
 
 
