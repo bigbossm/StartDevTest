@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.RestaurentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.03">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"
+            android:text="@string/restaurent_detail_title"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:id="@+id/item_price"
+            />
+        <ImageView
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        tools:layout_height="0dp"
+        card_view:cardBackgroundColor="@color/transparent"
+        card_view:cardElevation="0dp"
+        android:layout_marginBottom="20dp"
+        />
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_weight="0.03">
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:textColor="@color/cardview_light_background"
+    android:id="@+id/confirmation_button"
+    android:text="@string/restaurent_detail_buttontext"
+    />
+</LinearLayout>
+</LinearLayout>

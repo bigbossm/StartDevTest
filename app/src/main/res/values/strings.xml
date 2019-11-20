@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StartDevelopmentTest</string>
+    <string name="mainscreen_maintext">StartDevelopment "\n" Android Test</string>
+    <string name="mainscreen_buttontext">Let\'s go</string>
+    <string name="restaurent_detail_buttontext">Continue</string>
+    <string name="restaurent_detail_title">Start Dev Resto</string>
+    <string name="restaurent_title">Restaurant</string>
+    <string name="restaurent_order_title">Your Order "\n" For delivery</string>
+    <string name="restaurent_order_total">Total: </string>
+    <string name="restaurent_finalscreen">Congratulation you have passed the test "\n" send us your Code </string>
+    <string name="cancel">Cancel</string>
+    <string name="continu">Continue</string>
+</resources>

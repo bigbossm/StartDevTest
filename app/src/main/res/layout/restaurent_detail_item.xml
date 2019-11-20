@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="@color/transparent"
+        card_view:cardElevation="0dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardUseCompatPadding="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_view_detail"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="4dp"
+                android:background="@drawable/shadow"
+
+                />
+
+            <TextView
+                android:id="@+id/text_view_creator_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/image_view_detail"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="4.7"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popular_food_plus"
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@color/transparent"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+
+                />
+
+            <TextView
+                android:id="@+id/text_view_like_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popular_food_plus"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image_view_detail"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="4.7"
+                android:background="@color/cardview_dark_background"
+
+
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                />
+
+            <TextView
+                android:id="@+id/RestaurentMinOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_like_detail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image_view_detail"
+                android:text="INR 56990"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
